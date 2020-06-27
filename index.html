@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<textarea id="Brainfuck" >Brainfuck</textarea>
+		<button class="button" onclick='that.brainFuck2That()'>Brainfuck -> That</button>
+		<button class="button" onclick='that.that2BrainFuck()'>Brainfuck <- That</button>
+		<textarea id="That" >That</textarea>
+		<button class="button" onclick='that.that2Ascii()'>That -> Ascii</button>
+		<button class="button" onclick='that.ascii2That()'>That <- Ascii</button>
+		<textarea id="Ascii" >Ascii</textarea>
+	</body>
+
+	<script src='that.js'></script>
+	
+	<script>
+		function init(){
+			that = new That();
+		}
+		$(document).ready(function(){init();});
+	</script>
+</html>
